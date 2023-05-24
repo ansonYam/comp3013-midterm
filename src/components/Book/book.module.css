@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.bookContainer {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.bookContainer img {
+    width: 75px;
+    height: auto;
+    margin: 10px;
+}
+
+.active {
+    background-color: darkgray;
+    border: 3px solid black;
+}

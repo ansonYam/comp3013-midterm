@@ -1,0 +1,10 @@
+.detailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.detailsContainer .bigImage {
+    width: 50%;
+    height: auto;
+}

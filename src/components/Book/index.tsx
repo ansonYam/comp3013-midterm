@@ -11,8 +11,8 @@ export function Book({ name, coverImg, onClick, active }: Props) {
     const getClassName = (active: boolean) => {
         return (
             active
-            ? `${styles.bookContainer} ${styles.active}`
-            : styles.bookContainer
+                ? `${styles.bookContainer} ${styles.active}`
+                : styles.bookContainer
         )
     }
     return (

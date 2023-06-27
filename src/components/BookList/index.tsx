@@ -10,7 +10,7 @@ interface Props {
 
 export function BookList({ books, selectedId, onBookClick }: Props) {
     return (
-        <>
+        <div className={styles.listContainer}>
             {books.map((book) => (
                 <Book key={book.id}
                     name={book.name}
@@ -20,6 +20,6 @@ export function BookList({ books, selectedId, onBookClick }: Props) {
                 />
             ))
             }
-        </>
+        </div>
     )
 }

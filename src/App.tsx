@@ -12,23 +12,23 @@ function App() {
     setbookId(selectedBookId);
   }
   return (
-    <>
-    <BookDetails
-      name={currentBook.name}
-      author={currentBook.author}
-      coauthor={currentBook.coAuthor}
-      coverImg={currentBook.coverImg}
-      sequels={currentBook.sequels}
-      rating={currentBook.rating}
-    />
+    <div className="container">
+      <BookDetails
+        name={currentBook.name}
+        author={currentBook.author}
+        coauthor={currentBook.coAuthor}
+        coverImg={currentBook.coverImg}
+        sequels={currentBook.sequels}
+        rating={currentBook.rating}
+      />
 
-    <BookList
-      books={books}
-      selectedId={bookId}
-      onBookClick={handleBookClick}
+      <BookList
+        books={books}
+        selectedId={bookId}
+        onBookClick={handleBookClick}
 
-    />
-    </>
+      />
+    </div>
   )
 }
 
